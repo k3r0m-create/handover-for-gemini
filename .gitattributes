@@ -1,0 +1,10 @@
+# Store text files with LF in the repository, check them out natively.
+* text=auto
+
+*.js   text
+*.json text
+*.html text
+*.md   text
+
+*.png binary
+*.zip binary
