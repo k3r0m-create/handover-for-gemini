@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Datenschutzerklärung — Handover for Gemini</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        max-width: 46rem;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 5rem;
+        font: 16px/1.65 system-ui, -apple-system, sans-serif;
+        color: #1f1f1f;
+        background: #fff;
+      }
+      @media (prefers-color-scheme: dark) {
+        body { color: #e3e3e3; background: #131314; }
+        code { background: #2b2c2f; }
+        th { background: #2b2c2f; }
+        td, th { border-color: #444746; }
+        hr { border-color: #444746; }
+        .box { background: #2b2c2f; border-color: #444746; }
+      }
+      h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+      h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+      h3 { font-size: 1rem; margin-top: 1.5rem; }
+      .meta { color: #5f6368; font-size: 0.9rem; margin-top: 0; }
+      table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.93rem; }
+      td, th { border: 1px solid #d0d0d0; padding: 0.5rem 0.6rem; text-align: left; vertical-align: top; }
+      th { background: #f1f3f4; }
+      code { background: #f1f3f4; padding: 0.1rem 0.3rem; border-radius: 4px; font-size: 0.9em; }
+      hr { margin: 3rem 0; border: none; border-top: 1px solid #d0d0d0; }
+      .box {
+        background: #f1f3f4;
+        border: 1px solid #d0d0d0;
+        border-radius: 8px;
+        padding: 0.9rem 1.1rem;
+        margin: 1.25rem 0;
+      }
+      .todo { color: #b3261e; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <h1>Datenschutzerklärung</h1>
+    <p class="meta">Handover for Gemini (Chrome-Erweiterung) · Stand: September 2026</p>
+
+    <div class="box">
+      <strong>Kurzfassung:</strong> Deine Chat-Inhalte verlassen deinen Browser
+      nicht. Es gibt keine Analyse, kein Tracking, keine Werbung und keinen
+      Server — auch keinen zur Zahlungsabwicklung, denn die Erweiterung ist
+      kostenlos.
+    </div>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>
+      Die Erweiterung wird kostenlos und nicht geschäftsmäßig angeboten.
+    </p>
+    <p>
+      k3r0m-create<br />
+      E-Mail: <a href="mailto:handoverforgemini@gmail.com">handoverforgemini@gmail.com</a><br />
+      Quelltext: <a href="https://github.com/k3r0m-create/handover-for-gemini">https://github.com/k3r0m-create/handover-for-gemini</a>
+    </p>
+
+    <h2>2. Was die Erweiterung verarbeitet</h2>
+
+    <h3>2.1 Chat-Inhalte</h3>
+    <p>
+      Die Erweiterung liest den Inhalt der Gemini-Unterhaltung, die du gerade
+      geöffnet hast, um daraus einen Übergabetext zu erzeugen. Das geschieht
+      vollständig lokal in deinem Browser. Diese Inhalte werden
+      <strong>nicht</strong> an den Anbieter dieser Erweiterung und
+      <strong>nicht</strong> an Dritte übermittelt.
+    </p>
+    <p>
+      Zwei Fälle, in denen Inhalte deinen Browser dennoch verlassen — beide
+      ausschließlich in Richtung Google, weil du genau das angefordert hast:
+    </p>
+    <ul>
+      <li>
+        Beim Handover wird der erzeugte Text in das Eingabefeld eines neuen
+        Gemini-Tabs geschrieben. Sobald du ihn abschickst, geht er an Google —
+        genauso, als hättest du ihn selbst eingefügt.
+      </li>
+      <li>
+        Bei der Funktion „Briefing" wird ein Zusammenfassungs-Prompt in deinen
+        bestehenden Gemini-Chat geschrieben und abgeschickt. Auch das ist eine
+        normale Gemini-Anfrage an Google.
+      </li>
+    </ul>
+    <p>
+      Für die Verarbeitung durch Google gilt Googles eigene
+      Datenschutzerklärung.
+    </p>
+
+    <h3>2.2 Lokale Speicherung</h3>
+    <table>
+      <tr>
+        <th>Was</th>
+        <th>Wo</th>
+        <th>Wie lange</th>
+      </tr>
+      <tr>
+        <td>Deine Einstellungen (Vorauswahl, Leiste ein/aus, Briefing-Prompt)</td>
+        <td><code>chrome.storage.sync</code></td>
+        <td>Bis du sie änderst oder die Erweiterung entfernst</td>
+      </tr>
+      <tr>
+        <td>Der Übergabetext auf dem Weg in den neuen Tab</td>
+        <td><code>chrome.storage.local</code></td>
+        <td>
+          Wird nach dem Einfügen sofort gelöscht, spätestens nach 10 Minuten
+        </td>
+      </tr>
+    </table>
+    <p>
+      <code>chrome.storage.sync</code> wird von Chrome selbst mit deinem
+      Google-Konto synchronisiert, wenn du die Chrome-Synchronisierung
+      aktiviert hast. Das ist eine Funktion des Browsers, nicht dieser
+      Erweiterung.
+    </p>
+
+    <h3>2.3 Keine externen Dienste</h3>
+    <p>
+      Die Erweiterung kontaktiert keinen Server — weder einen des Anbieters noch
+      den eines Dritten. Sie ist kostenlos, es gibt keine Zahlungsabwicklung,
+      keine Lizenzprüfung und keinen Abruf von Fremdcode. Sämtlicher Code ist im
+      Erweiterungspaket enthalten.
+    </p>
+
+    <h3>2.4 Was nicht passiert</h3>
+    <ul>
+      <li>Keine Analyse- oder Tracking-Dienste</li>
+      <li>Keine Werbung</li>
+      <li>Kein Verkauf oder Weitergabe von Daten an Dritte</li>
+      <li>Keine Nutzerkonten beim Anbieter dieser Erweiterung</li>
+      <li>Kein Server des Anbieters, auf dem Daten gespeichert würden</li>
+    </ul>
+
+    <h2>3. Berechtigungen und wofür sie gebraucht werden</h2>
+    <table>
+      <tr>
+        <th>Berechtigung</th>
+        <th>Zweck</th>
+      </tr>
+      <tr>
+        <td><code>storage</code></td>
+        <td>
+          Einstellungen speichern und den Übergabetext kurzzeitig zwischen zwei
+          Tabs weiterreichen
+        </td>
+      </tr>
+      <tr>
+        <td><code>clipboardWrite</code></td>
+        <td>Den Verlauf in die Zwischenablage kopieren, wenn du das auslöst</td>
+      </tr>
+      <tr>
+        <td><code>gemini.google.com</code></td>
+        <td>
+          Die einzige Seite, auf der die Erweiterung überhaupt läuft — sie liest
+          dort den Chatverlauf und fügt Text ein
+        </td>
+      </tr>
+    </table>
+    <p>
+      Die Erweiterung fordert bewusst keinen Zugriff auf andere Websites an.
+      Der vollständige Quelltext ist einsehbar:
+      <a href="https://github.com/k3r0m-create/handover-for-gemini">GitHub</a>.
+    </p>
+
+    <h2>4. Deine Rechte</h2>
+    <p>
+      Dir stehen nach DSGVO die Rechte auf Auskunft (Art. 15), Berichtigung
+      (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18),
+      Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21) zu, ebenso ein
+      Beschwerderecht bei einer Aufsichtsbehörde (Art. 77).
+    </p>
+    <p>
+      Praktisch gilt: Der Anbieter dieser Erweiterung speichert keine Daten über
+      dich. Alle lokal gespeicherten Daten löschst du, indem du die Erweiterung
+      deinstallierst.
+    </p>
+
+    <h2>5. Änderungen</h2>
+    <p>
+      Ändert sich der Funktionsumfang der Erweiterung, wird diese Erklärung
+      angepasst. Das Datum oben zeigt den aktuellen Stand.
+    </p>
+
+    <hr />
+
+    <h1 id="en">Privacy Policy (English)</h1>
+
+    <p>
+      <strong>Short version:</strong> Your chat content never leaves your
+      browser. No analytics, no tracking, no ads, and no server at all — the
+      extension is free and contacts nothing.
+    </p>
+
+    <h2>What the extension processes</h2>
+    <p>
+      The extension reads the Gemini conversation you currently have open in
+      order to build a handover text. This happens entirely locally. That content
+      is never sent to the developer of this extension or to any third party.
+    </p>
+    <p>
+      Content does leave your browser in two cases, both toward Google and both
+      because you asked for it: the handover text is typed into a new Gemini tab,
+      and the "briefing" feature sends a summarisation prompt into your existing
+      Gemini chat. Both are ordinary Gemini requests, governed by Google's own
+      privacy policy.
+    </p>
+
+    <h2>Local storage</h2>
+    <p>
+      Settings live in <code>chrome.storage.sync</code>. The handover text is
+      held briefly in <code>chrome.storage.local</code> while moving between
+      tabs and is deleted after insertion, at the latest after 10 minutes.
+    </p>
+
+    <h2>External services</h2>
+    <p>
+      None. The extension contacts no server, neither the developer's nor a third
+      party's. It is free, so there is no payment processing and no licence
+      check. All code ships inside the extension package.
+    </p>
+
+    <h2>What does not happen</h2>
+    <p>
+      No analytics, no tracking, no advertising, no sale or sharing of data, no
+      user accounts, and no server of any kind.
+    </p>
+
+    <h2>Contact</h2>
+    <p>k3r0m-create · <a href="mailto:handoverforgemini@gmail.com">handoverforgemini@gmail.com</a></p>
+  </body>
+</html>

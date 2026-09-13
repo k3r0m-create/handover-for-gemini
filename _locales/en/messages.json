@@ -1,0 +1,258 @@
+{
+  "extName": {
+    "message": "Handover for Gemini",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Continue a long Gemini conversation in a fresh chat — without losing the context."
+  },
+  "dockLoadAll": {
+    "message": "Load the full history"
+  },
+  "dockHandover": {
+    "message": "Handover: continue in a new chat"
+  },
+  "dockBriefing": {
+    "message": "Create a briefing and hand it over"
+  },
+  "dockCopy": {
+    "message": "Copy the conversation as Markdown"
+  },
+  "dockBottom": {
+    "message": "Jump to the end"
+  },
+  "rowJump": {
+    "message": "Show in chat"
+  },
+  "toastNoInput": {
+    "message": "Input field not found. Your context is safe."
+  },
+  "toastRetryInsert": {
+    "message": "Insert again"
+  },
+  "toastInserted": {
+    "message": "Context inserted. Carry on where you left off."
+  },
+  "toastInsertFailed": {
+    "message": "Insert failed. Your context is safe."
+  },
+  "toastRetry": {
+    "message": "Try again"
+  },
+  "toastCopied": {
+    "message": "Copied to clipboard."
+  },
+  "toastLoadedComplete": {
+    "message": "$COUNT$ messages loaded — history is complete.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastLoadedPartial": {
+    "message": "$COUNT$ messages loaded — could not confirm the beginning.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleCopy": {
+    "message": "Copy conversation"
+  },
+  "titleHandover": {
+    "message": "Handover to a new chat"
+  },
+  "titleBriefing": {
+    "message": "Handover briefing"
+  },
+  "statusLoading": {
+    "message": "Loading history …"
+  },
+  "statusLoadingCount": {
+    "message": "Loading history … $COUNT$ messages",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusCaptured": {
+    "message": "$COUNT$ messages captured.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusMoment": {
+    "message": "One moment …"
+  },
+  "statusFailedRetry": {
+    "message": "Failed. Please try again."
+  },
+  "warnIncomplete": {
+    "message": "The history could not be loaded all the way to the beginning with certainty. The handover will be marked as an excerpt — scroll up yourself and try again if you need the whole conversation."
+  },
+  "filterAll": {
+    "message": "All"
+  },
+  "filterNone": {
+    "message": "None"
+  },
+  "filterLast": {
+    "message": "Last $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "filterUserOnly": {
+    "message": "My prompts only"
+  },
+  "roleUser": {
+    "message": "You"
+  },
+  "roleModel": {
+    "message": "Gemini"
+  },
+  "statsLine": {
+    "message": "$SELECTED$ of $TOTAL$ messages · $CHARS$ characters",
+    "placeholders": {
+      "selected": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "chars": {
+        "content": "$3"
+      }
+    }
+  },
+  "statsTooLong": {
+    "message": " — very long, Gemini may truncate the input"
+  },
+  "btnCancel": {
+    "message": "Cancel"
+  },
+  "btnCopy": {
+    "message": "Copy"
+  },
+  "btnOpenNewChat": {
+    "message": "Open new chat"
+  },
+  "btnNext": {
+    "message": "Continue"
+  },
+  "btnCreateBriefing": {
+    "message": "Create briefing"
+  },
+  "btnRetry": {
+    "message": "Try again"
+  },
+  "peekBack": {
+    "message": "← Back to selection"
+  },
+  "briefingIntro": {
+    "message": "Gemini summarises this chat itself. The summary is carried over to a new chat instead of the whole history."
+  },
+  "briefingWarning": {
+    "message": "To do that, the prompt below is written into this chat and sent. The chat gets one extra question and answer."
+  },
+  "briefingLabelPrompt": {
+    "message": "Prompt"
+  },
+  "briefingStatusInsert": {
+    "message": "Inserting the prompt …"
+  },
+  "briefingStatusSend": {
+    "message": "Sending the prompt …"
+  },
+  "briefingStatusWriting": {
+    "message": "Gemini is writing the briefing …"
+  },
+  "briefingStatusWritingCount": {
+    "message": "Gemini is writing the briefing … $CHARS$ characters",
+    "placeholders": {
+      "chars": {
+        "content": "$1"
+      }
+    }
+  },
+  "briefingChars": {
+    "message": "Briefing: $CHARS$ characters",
+    "placeholders": {
+      "chars": {
+        "content": "$1"
+      }
+    }
+  },
+  "briefingErrNoInput": {
+    "message": "Input field not found."
+  },
+  "briefingErrInputBusy": {
+    "message": "There is already text in the input field — please clear it first."
+  },
+  "briefingErrInsert": {
+    "message": "The prompt could not be inserted."
+  },
+  "briefingErrSend": {
+    "message": "Sending did not work. The prompt is in the input field — send it yourself."
+  },
+  "briefingErrNoResponse": {
+    "message": "No response received."
+  },
+  "briefingErrEmpty": {
+    "message": "The response was empty."
+  },
+  "briefingNothingTransferred": {
+    "message": "Nothing was transferred. You can close this and try again."
+  },
+  "briefingTransferFailed": {
+    "message": "Briefing created, handover failed."
+  },
+  "briefingDefaultPrompt": {
+    "message": "Summarise our conversation so far as a handover briefing for a new chat session. Structure:\n\n1. Goal and context\n2. Decisions made, with the reasoning\n3. Current state\n4. Open points and next steps\n5. Relevant code or concrete artefacts — complete, not abbreviated\n\nWrite it so that someone with no knowledge of this chat can carry on from it. No preamble, no small talk."
+  },
+  "popupSub": {
+    "message": "Settings apply to all open Gemini tabs."
+  },
+  "popupScopeLabel": {
+    "message": "Preselection when opening"
+  },
+  "popupScopeAll": {
+    "message": "Whole conversation"
+  },
+  "popupScopeLast": {
+    "message": "Last $COUNT$ messages",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupShowDock": {
+    "message": "Show the toolbar in the chat"
+  },
+  "popupPromptLabel": {
+    "message": "Briefing prompt"
+  },
+  "popupReset": {
+    "message": "Reset"
+  },
+  "popupSave": {
+    "message": "Save"
+  },
+  "popupSaved": {
+    "message": "Saved"
+  },
+  "popupSaveFailed": {
+    "message": "Could not save"
+  },
+  "popupHint": {
+    "message": "This extension has no server of its own. Everything stays in your browser."
+  }
+}

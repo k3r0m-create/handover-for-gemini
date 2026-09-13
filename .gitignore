@@ -1,0 +1,14 @@
+# Working notes, kept local
+ROADMAP.md
+IDEAS.md
+STORE.md
+
+node_modules/
+package-lock.json
+*.zip
+*.crx
+*.pem
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

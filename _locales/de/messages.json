@@ -1,0 +1,258 @@
+{
+  "extName": {
+    "message": "Handover for Gemini",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Einen langen Gemini-Chat in einem neuen Chat fortsetzen — ohne den Kontext zu verlieren."
+  },
+  "dockLoadAll": {
+    "message": "Kompletten Verlauf nachladen"
+  },
+  "dockHandover": {
+    "message": "Handover: in neuem Chat fortsetzen"
+  },
+  "dockBriefing": {
+    "message": "Briefing erstellen und übergeben"
+  },
+  "dockCopy": {
+    "message": "Verlauf als Markdown kopieren"
+  },
+  "dockBottom": {
+    "message": "Zum Ende springen"
+  },
+  "rowJump": {
+    "message": "Im Chat anzeigen"
+  },
+  "toastNoInput": {
+    "message": "Eingabefeld nicht gefunden. Kontext ist gesichert."
+  },
+  "toastRetryInsert": {
+    "message": "Erneut einfügen"
+  },
+  "toastInserted": {
+    "message": "Kontext eingefügt. Du kannst weiterschreiben."
+  },
+  "toastInsertFailed": {
+    "message": "Einfügen fehlgeschlagen. Kontext ist gesichert."
+  },
+  "toastRetry": {
+    "message": "Erneut versuchen"
+  },
+  "toastCopied": {
+    "message": "In die Zwischenablage kopiert."
+  },
+  "toastLoadedComplete": {
+    "message": "$COUNT$ Nachrichten geladen — Verlauf vollständig.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastLoadedPartial": {
+    "message": "$COUNT$ Nachrichten geladen — Anfang nicht sicher erreicht.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "titleCopy": {
+    "message": "Verlauf kopieren"
+  },
+  "titleHandover": {
+    "message": "Handover in neuen Chat"
+  },
+  "titleBriefing": {
+    "message": "Handover-Briefing"
+  },
+  "statusLoading": {
+    "message": "Lade Verlauf …"
+  },
+  "statusLoadingCount": {
+    "message": "Lade Verlauf … $COUNT$ Nachrichten",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusCaptured": {
+    "message": "$COUNT$ Nachrichten erfasst.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusMoment": {
+    "message": "Moment …"
+  },
+  "statusFailedRetry": {
+    "message": "Fehlgeschlagen. Bitte erneut versuchen."
+  },
+  "warnIncomplete": {
+    "message": "Der Verlauf konnte nicht sicher bis zum Anfang geladen werden. Der Übertrag wird als Auszug gekennzeichnet — scroll einmal selbst nach oben und versuch es erneut, wenn du den vollständigen Chat brauchst."
+  },
+  "filterAll": {
+    "message": "Alle"
+  },
+  "filterNone": {
+    "message": "Keine"
+  },
+  "filterLast": {
+    "message": "Letzte $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "filterUserOnly": {
+    "message": "Nur meine Prompts"
+  },
+  "roleUser": {
+    "message": "Du"
+  },
+  "roleModel": {
+    "message": "Gemini"
+  },
+  "statsLine": {
+    "message": "$SELECTED$ von $TOTAL$ Nachrichten · $CHARS$ Zeichen",
+    "placeholders": {
+      "selected": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "chars": {
+        "content": "$3"
+      }
+    }
+  },
+  "statsTooLong": {
+    "message": " — sehr lang, Gemini schneidet die Eingabe eventuell ab"
+  },
+  "btnCancel": {
+    "message": "Abbrechen"
+  },
+  "btnCopy": {
+    "message": "Kopieren"
+  },
+  "btnOpenNewChat": {
+    "message": "Neuen Chat öffnen"
+  },
+  "btnNext": {
+    "message": "Weiter"
+  },
+  "btnCreateBriefing": {
+    "message": "Briefing erstellen"
+  },
+  "btnRetry": {
+    "message": "Erneut versuchen"
+  },
+  "peekBack": {
+    "message": "← Zurück zur Auswahl"
+  },
+  "briefingIntro": {
+    "message": "Gemini fasst diesen Chat selbst zusammen. Die Zusammenfassung wird in einen neuen Chat übertragen — statt des kompletten Verlaufs."
+  },
+  "briefingWarning": {
+    "message": "Dazu wird der Prompt unten in diesen Chat geschrieben und abgeschickt. Der Chat bekommt also eine zusätzliche Frage und Antwort."
+  },
+  "briefingLabelPrompt": {
+    "message": "Prompt"
+  },
+  "briefingStatusInsert": {
+    "message": "Prompt wird eingefügt …"
+  },
+  "briefingStatusSend": {
+    "message": "Prompt wird gesendet …"
+  },
+  "briefingStatusWriting": {
+    "message": "Gemini schreibt das Briefing …"
+  },
+  "briefingStatusWritingCount": {
+    "message": "Gemini schreibt das Briefing … $CHARS$ Zeichen",
+    "placeholders": {
+      "chars": {
+        "content": "$1"
+      }
+    }
+  },
+  "briefingChars": {
+    "message": "Briefing: $CHARS$ Zeichen",
+    "placeholders": {
+      "chars": {
+        "content": "$1"
+      }
+    }
+  },
+  "briefingErrNoInput": {
+    "message": "Eingabefeld nicht gefunden."
+  },
+  "briefingErrInputBusy": {
+    "message": "Im Eingabefeld steht schon Text — bitte erst leeren."
+  },
+  "briefingErrInsert": {
+    "message": "Prompt konnte nicht eingefügt werden."
+  },
+  "briefingErrSend": {
+    "message": "Senden hat nicht funktioniert. Der Prompt steht im Eingabefeld — schick ihn selbst ab."
+  },
+  "briefingErrNoResponse": {
+    "message": "Keine Antwort erhalten."
+  },
+  "briefingErrEmpty": {
+    "message": "Die Antwort war leer."
+  },
+  "briefingNothingTransferred": {
+    "message": "Nichts wurde übertragen. Du kannst das Fenster schließen und es erneut versuchen."
+  },
+  "briefingTransferFailed": {
+    "message": "Briefing erstellt, Übergabe fehlgeschlagen."
+  },
+  "briefingDefaultPrompt": {
+    "message": "Fasse unsere bisherige Konversation als Übergabe-Briefing für eine neue Chat-Sitzung zusammen. Struktur:\n\n1. Ziel und Kontext\n2. Getroffene Entscheidungen samt Begründung\n3. Aktueller Stand\n4. Offene Punkte und nächste Schritte\n5. Relevanter Code oder konkrete Artefakte — vollständig, nicht gekürzt\n\nSchreibe es so, dass jemand ohne Kenntnis dieses Chats damit weiterarbeiten kann. Keine Einleitung, kein Smalltalk."
+  },
+  "popupSub": {
+    "message": "Einstellungen gelten für alle offenen Gemini-Tabs."
+  },
+  "popupScopeLabel": {
+    "message": "Vorauswahl beim Öffnen"
+  },
+  "popupScopeAll": {
+    "message": "Kompletter Verlauf"
+  },
+  "popupScopeLast": {
+    "message": "Letzte $COUNT$ Nachrichten",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popupShowDock": {
+    "message": "Leiste im Chat anzeigen"
+  },
+  "popupPromptLabel": {
+    "message": "Briefing-Prompt"
+  },
+  "popupReset": {
+    "message": "Zurücksetzen"
+  },
+  "popupSave": {
+    "message": "Speichern"
+  },
+  "popupSaved": {
+    "message": "Gespeichert"
+  },
+  "popupSaveFailed": {
+    "message": "Speichern fehlgeschlagen"
+  },
+  "popupHint": {
+    "message": "Diese Erweiterung hat keinen eigenen Server. Alles bleibt in deinem Browser."
+  }
+}
